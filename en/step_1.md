@@ -20,7 +20,7 @@ loops.everyInterval(500, function () {
     input.soundLevel(),
     255
     )
-    datalogger.log(datalogger.createCV("Sound Level", input.soundLevel()))
+    datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
     if (input.soundLevel() > maximum && alarm == false) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
         alarm = true
