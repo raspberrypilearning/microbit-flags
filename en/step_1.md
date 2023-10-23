@@ -8,7 +8,7 @@ You did this by setting the `alarm`{:class='microbitvariables'} variable to `fal
 let alarm = false
 ```
 
-You then checked that the alarm was not already set true if the sound level was too high before setting off the alarm. 
+You then checked that the alarm was not set to true if the sound level was too high before setting off the alarm. 
 
 You then set it to `true`{:class='microbitlogic'} when the alarm sounded. 
 
@@ -39,4 +39,4 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 This let you only trigger the alarm if it was not already triggered.
 
-- You can find the `true`{:class='microbitlogic'}, `false`{:class='microbitlogic'} and `not`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
+- You can find the `true`{:class='microbitlogic'}, `false`{:class='microbitlogic'}, and `not`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
