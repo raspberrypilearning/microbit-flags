@@ -8,9 +8,9 @@ You did this by setting the `alarm`{:class='microbitvariables'} variable to `fal
 let alarm = false
 ```
 
-Before setting off the alarm, you checked that the alarm was not already active if the sound level was too high. 
+You checked that the alarm was not already active if the sound level was too high. 
 
-If the alarm was not active and the sound level was too high, then you then set the `alarm`{:class='microbitvariables'} variable to `true`{:class='microbitlogic'}.
+If the alarm was not active and the sound level was too high, you set the `alarm`{:class='microbitvariables'} variable to `true`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
