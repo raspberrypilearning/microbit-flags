@@ -8,9 +8,9 @@ You did this by setting the `alarm`{:class='microbitvariables'} variable to `fal
 let alarm = false
 ```
 
-You then checked that it was `false`{:class='microbitlogic'} if the sound level was too high before setting off the alarm. 
+You checked that the alarm was not already active if the sound level was too high. 
 
-You then changed it to `true`{:class='microbitlogic'} when the alarm sounded. 
+If the alarm was not active and the sound level was too high, you set the `alarm`{:class='microbitvariables'} variable to `true`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -21,14 +21,14 @@ loops.everyInterval(500, function () {
     255
     )
     datalogger.log(datalogger.createCV("Sound level", input.soundLevel()))
-    if (input.soundLevel() > maximum && alarm == false) {
+    if (input.soundLevel() > maximum && !(alarm)) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
         alarm = true
     }
 })
 ```
 
-You changed it back to `false`{:class='microbitlogic'} when the touch logo is pressed.
+You set the alarm back to `false`{:class='microbitlogic'} when the touch logo is pressed.
 
 ```microbit
 let alarm = false
@@ -39,4 +39,4 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 
 This let you only trigger the alarm if it was not already triggered.
 
-- You can find the `true`{:class='microbitlogic'} and `false`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
+- You can find the `true`{:class='microbitlogic'}, `false`{:class='microbitlogic'}, and `not`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
