@@ -2,4 +2,4 @@ alarm
 
 maximum
 
-Sound level
+Geluidsniveau
