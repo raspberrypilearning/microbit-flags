@@ -1,16 +1,16 @@
-You can use `true`{:class='microbitlogic'} and `false`{:class='microbitlogic'} blocks to check (flag) when something has happened in your code.
+Je kunt 'waar`{:class='microbitlogic'} en `onwaar\`{:class='microbitlogic'} blokken gebruiken om te controleren (markeren) of er iets in je code is gebeurd.
 
-In the Sound meter project, you made sure the alarm noise did not add to the already noisy environment.
+In het project Geluidsmeter heb je ervoor gezorgd dat het alarmgeluid de toch al luidruchtige omgeving niet verergerde.
 
-You did this by setting the `alarm`{:class='microbitvariables'} variable to `false`{:class='microbitlogic'} when your code started.
+Je hebt dit gedaan door de `alarm`{:class='microbitvariables'} variabele op `onwaar`{:class='microbitlogic'} in te stellen toen je code begon.
 
 ```microbit
 let alarm = false
 ```
 
-You checked that the alarm was not already active if the sound level was too high.
+Je hebt gecontroleerd of het alarm niet al actief was als het geluidsniveau te hoog was.
 
-If the alarm was not active and the sound level was too high, you set the `alarm`{:class='microbitvariables'} variable to `true`{:class='microbitlogic'}.
+Als het alarm niet actief was en het geluidsniveau te hoog was, zette je de `alarm`{:class='microbitvariables'} variabele op `waar`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -28,7 +28,7 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You set the alarm back to `false`{:class='microbitlogic'} when the touch logo is pressed.
+Je hebt het alarm teruggezet naar `onwaar`{:class='microbitlogic'} wanneer het logo werd aangeraakt.
 
 ```microbit
 let alarm = false
@@ -37,6 +37,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
-This let you only trigger the alarm if it was not already triggered.
+Hierdoor kun je het alarm alleen activeren als het nog niet is geactiveerd.
 
-- You can find the `true`{:class='microbitlogic'}, `false`{:class='microbitlogic'}, and `not`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
+- Je kunt de `waar`{:class='microbitlogic'}, `onwaar`{:class='microbitlogic'} en `niet`{:class='microbitlogic'} blokken vinden in het `Logisch`{:class='microbitlogic'} menu in je Toolbox.
