@@ -1,5 +1,5 @@
-alarm
+alarme
 
 maximum
 
-Sound level
+Niveau sonore
