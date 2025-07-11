@@ -1,16 +1,16 @@
-You can use `true`{:class='microbitlogic'} and `false`{:class='microbitlogic'} blocks to check (flag) when something has happened in your code.
+Tu peux utiliser les blocs `vrai`{:class='microbitlogic'} et `faux`{:class='microbitlogic'} pour vérifier (drapeau) quand quelque chose s'est passé dans ton code.
 
-In the Sound meter project, you made sure the alarm noise did not add to the already noisy environment.
+Dans le projet Sonomètre, tu as veillé à ce que le bruit de l'alarme ne rendait pas l'endroit encore plus bruyant.
 
-You did this by setting the `alarm`{:class='microbitvariables'} variable to `false`{:class='microbitlogic'} when your code started.
+Tu as fait cela en définissant la variable `alarme`{:class='microbitvariables'} à `faux`{:class='microbitlogic'} lorsque ton code a démarré.
 
 ```microbit
 let alarm = false
 ```
 
-You checked that the alarm was not already active if the sound level was too high.
+Tu as vérifié que l'alarme n'était pas déjà active si le niveau sonore était trop élevé.
 
-If the alarm was not active and the sound level was too high, you set the `alarm`{:class='microbitvariables'} variable to `true`{:class='microbitlogic'}.
+Si l'alarme n'était pas active et que le niveau sonore était trop élevé, tu as défini la variable `alarme`{:class='microbitvariables'} à `vrai`{:class='microbitlogic'}.
 
 ```microbit
 let alarm = false
@@ -28,7 +28,7 @@ loops.everyInterval(500, function () {
 })
 ```
 
-You set the alarm back to `false`{:class='microbitlogic'} when the touch logo is pressed.
+Tu remets l'alarme sur `faux`{:class='microbitlogic'} lorsque le logo tactile est pressé.
 
 ```microbit
 let alarm = false
@@ -37,6 +37,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
-This let you only trigger the alarm if it was not already triggered.
+Cela te permet de déclencher l'alarme uniquement si elle n'a pas déjà été déclenchée.
 
-- You can find the `true`{:class='microbitlogic'}, `false`{:class='microbitlogic'}, and `not`{:class='microbitlogic'} blocks in the `Logic`{:class='microbitlogic'} menu in your Toolbox.
+- Tu peux trouver les blocs `vrai`{:class='microbitlogic'}, `faux`{:class='microbitlogic'} et `non`{:class='microbitlogic'} dans le menu `Logique`{:class='microbitlogic'} de ta boîte à outils.
