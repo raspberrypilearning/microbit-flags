@@ -1,6 +1,6 @@
-title: True/false flags
+title: Drapeaux vrai/faux
 hero_image: images/banner.png
-description: Using true/false flags to control when code runs
+description: Utilise des drapeaux vrai/faux pour contrôler lorsque le code s'exécute
 version: 4
 listed: false
 copyedit: false
